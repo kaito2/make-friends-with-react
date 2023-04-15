@@ -6,10 +6,8 @@
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/violet.css';
 
-/* reset */
-a,
-button {
-  all: unset;
+body {
+  background-color: black;
 }
 
 .ToolbarRoot {
