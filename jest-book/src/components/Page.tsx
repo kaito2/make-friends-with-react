@@ -1,7 +1,7 @@
 import { FC } from "react";
 import InputForm from "./InputForm";
 import Result from "./Result";
-import { CalcTaxParams, useCalcTax } from "@/hooks/useCalcTax";
+import { CalcTaxParams, useCalcTax } from "../hooks/useCalcTax";
 
 const Page = () => {
   const { result, calcTax } = useCalcTax();

@@ -18,5 +18,6 @@ export const WithoutTax: Story = {
 export const WithTax: Story = {
   args: {
     tax: 10000,
+    calcTax: () => {},
   },
 };

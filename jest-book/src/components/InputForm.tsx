@@ -11,7 +11,7 @@ const InputForm: FC<Props> = ({ onSubmit }) => {
   );
 
   return (
-    <div className="card bg-gray-50 shadow-sm">
+    <div className="card bg-gray-50 shadow-lg">
       <div className="card-body">
         <div className="flex justify-center">
           <h2 className="text-xl font-bold">退職金情報を入力してください</h2>

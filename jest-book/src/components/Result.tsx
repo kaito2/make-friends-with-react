@@ -7,7 +7,7 @@ type Props = {
 const Result: FC<Props> = ({ tax }) => {
   if (tax === undefined) {
     return (
-      <div className="card bg-gray-50 shadow-sm">
+      <div className="card bg-gray-50 shadow-lg">
         <div className="card-body">
           <div className="flex justify-center">
             <h2 className="text-xl font-bold">退職金情報を入力してください</h2>
@@ -18,7 +18,7 @@ const Result: FC<Props> = ({ tax }) => {
   }
 
   return (
-    <div className="card bg-gray-50 shadow-sm">
+    <div className="card bg-gray-50 shadow-lg">
       <div className="card-body">
         <div className="flex justify-center">
           <h3 className="text-lg font-bold">退職金にかかる所得税</h3>
