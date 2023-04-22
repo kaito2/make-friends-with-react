@@ -1,10 +1,13 @@
-import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 
 import InputForm from "./InputForm";
 
-export default {
-  title: "Standard",
+const meta: Meta<typeof InputForm> = {
+  title: "InputForm",
   component: InputForm,
-} as ComponentMeta<typeof InputForm>;
+};
 
-export const Standard: ComponentStoryObj<typeof InputForm> = {};
+export default meta;
+type Story = StoryObj<typeof InputForm>;
+
+export const Normal: Story = {};

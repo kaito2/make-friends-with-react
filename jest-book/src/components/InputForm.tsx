@@ -17,7 +17,7 @@ const InputForm: FC = () => {
         <h3 className="font-bold mt-4">退職起因</h3>
         <div className="form-control flex items-start">
           <label className="label cursor-pointer">
-            <input type="checkbox" checked className="checkbox" />
+            <input type="checkbox" className="checkbox" />
             <span className="ml-4 label-text">
               障害者となったことに直接起因して退職した
             </span>
@@ -33,7 +33,7 @@ const InputForm: FC = () => {
           </div>
           <div className="form-control ml-8">
             <label className="label cursor-pointer">
-              <input type="radio" name="radio-10" className="radio" checked />
+              <input type="radio" name="radio-10" className="radio" />
               <span className="label-text ml-2">役員等</span>
             </label>
           </div>
