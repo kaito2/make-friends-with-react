@@ -12,7 +12,7 @@ type PresentationProps = {
 
 export const Presentation: FC<PresentationProps> = ({ tax }) => {
   return (
-    <div className="container mx-auto px-4 bg-slate-100">
+    <div className="container mx-auto px-4">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold mt-8">
           退職金の所得税計算アプリケーション
