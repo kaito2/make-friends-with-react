@@ -1,6 +1,15 @@
-import { FC } from "react";
+import { CalcTaxParams } from "@/hooks/useCalcTax";
+import { FC, useState } from "react";
 
-const InputForm: FC = () => {
+type Props = {
+  onSubmit: (params: CalcTaxParams) => void;
+};
+
+const InputForm: FC<Props> = ({ onSubmit }) => {
+  const [severancePay, setSeverancePay] = useState<number | undefined>(
+    undefined
+  );
+
   return (
     <div className="card bg-gray-50 shadow-sm">
       <div className="card-body">
@@ -41,12 +50,32 @@ const InputForm: FC = () => {
         <h3 className="font-bold mt-4">退職金</h3>
         <div className="form-control">
           <label className="input-group">
-            <input type="number" className="input input-bordered" />
+            <input
+              type="number"
+              className="input input-bordered"
+              onChange={(e) => {
+                setSeverancePay(Number(e.target.value));
+              }}
+              value={severancePay}
+              placeholder="100000"
+            />
             <span>円</span>
           </label>
         </div>
         <div className="mt-8 flex justify-end">
-          <button className="btn btn-primary w-48">所得税を計算する</button>
+          <button
+            className="btn btn-primary w-48"
+            onClick={() => {
+              onSubmit({
+                severancePay: severancePay!,
+                isDisability: false,
+                isOfficer: false,
+                yearsOfService: 0,
+              });
+            }}
+          >
+            所得税を計算する
+          </button>
         </div>
       </div>
     </div>
