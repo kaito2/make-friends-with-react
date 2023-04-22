@@ -1,14 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Page from "./Page";
+import { Presentation } from "./Page";
 
-const meta: Meta<typeof Page> = {
-  title: "Page",
-  component: Page,
+const meta: Meta<typeof Presentation> = {
+  title: "Presentation",
+  component: Presentation,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Page>;
+type Story = StoryObj<typeof Presentation>;
 
-export const Normal: Story = {};
+export const WithTax: Story = {
+  args: {
+    tax: 10000,
+  },
+};
+
+export const WithoutTax: Story = {
+  args: {},
+};
