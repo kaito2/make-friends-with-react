@@ -10,7 +10,7 @@ const Result: FC<Props> = ({ tax }) => {
       <div className="card bg-gray-50 shadow-lg">
         <div className="card-body">
           <div className="flex justify-center">
-            <h2 className="text-xl font-bold">退職金情報を入力してください</h2>
+            <h2 className="text-2xl font-bold">退職金情報を入力してください</h2>
           </div>
         </div>
       </div>

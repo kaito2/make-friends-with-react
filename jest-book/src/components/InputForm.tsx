@@ -124,7 +124,7 @@ const InputForm: FC<Props> = ({ onSubmit }) => {
           <div className="mt-8 flex justify-end">
             <input
               type="submit"
-              className="btn btn-primary w-48"
+              className="btn btn-primary w-56"
               value="所得税を計算する"
             />
           </div>
